@@ -42,3 +42,15 @@ Using inner html is not at all safe, so if we want to write a text in strong, th
 check script1 for this.
 
 </p>
+
+<br/>
+<br/>
+<br/>
+
+## Remove Elements from a DOM
+
+<p>
+To remove an element from a DOM, simply write a query selector to fetch that element and write elementName.remove()<br/>
+we can also remove a child from a parent element.
+Commands for both are shown in script.js
+</p>

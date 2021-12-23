@@ -29,3 +29,15 @@ strongEle.innerText = "This will work"
 const divEle4 = document.createElement("div")
 divEle4.append(strongEle)
 body.append(divEle4)
+
+
+// Removing elements from dom Uncomment these lines to see how line1 disappers
+
+// divEle.remove()
+
+// body.removeChild(divEle2)
+
+
+// Getting attributes for elements
+const line1Span = document.querySelector("#line1")
+console.log("Access ID for line1 so id:",line1Span.getAttribute("id"))
