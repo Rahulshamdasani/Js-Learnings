@@ -41,3 +41,41 @@ body.append(divEle4)
 // Getting attributes for elements
 const line1Span = document.querySelector("#line1")
 console.log("Access ID for line1 so id:",line1Span.getAttribute("id"))
+
+// Changing attributes of above line1
+line1Span.setAttribute("title","this is dom title")
+console.log("check title for line1 :",line1Span.getAttribute("title"))
+
+// We can even do removeattributes
+line1Span.removeAttribute("title")
+console.log("check title after removing :",line1Span.getAttribute("title"))
+
+
+// we can create custom attributes
+line1Span.setAttribute("data-rahul","This is first custom attribute")
+console.log(line1Span.dataset)
+line1Span.setAttribute("data-naveksha","This is second custom attribute")
+console.log(line1Span.dataset)
+
+// if custom attributes are more than 1 word then they are automatically stored as camelCase
+line1Span.setAttribute("data-naveksha-rahul","This is Longer custom attribute")
+console.log("value should be 'This is Longer custom attribute' is it this value:",line1Span.dataset.navekshaRahul)
+line1Span.dataset.navekshaRahul ="This is changed to camel case"
+console.log("Now changes:",line1Span.dataset.navekshaRahul)
+
+// classList
+console.log("Before setting anything",line1Span.classList)
+line1Span.classList.add("class1")
+line1Span.classList.add("class2")
+console.log("After adding 1 and 2",line1Span.classList)
+line1Span.classList.remove("class1")
+console.log("After removing 1",line1Span.classList)
+line1Span.classList.toggle("class1")
+console.log("After Toggle 1",line1Span.classList)
+line1Span.classList.toggle("class1")
+console.log("After Toggle 1",line1Span.classList)
+
+
+// styling
+line1Span.style.color = "red"
+line1Span.style.backgroundColor = "grey"

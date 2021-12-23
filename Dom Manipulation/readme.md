@@ -53,4 +53,18 @@ check script1 for this.
 To remove an element from a DOM, simply write a query selector to fetch that element and write elementName.remove()<br/>
 we can also remove a child from a parent element.
 Commands for both are shown in script.js
+<br/>
 </p>
+We can do many more operations
+<ul>
+    <li> getAttributes()
+    <li> setAttributes()
+    <li> removeAttributes()
+    <li> creating custom attributes : Condition for these attributes is, it should start with keyword data
+    <li>If custom attributes are more than 1 word then they are automatically stored as camelCase
+    <li> we can see classList
+    <li> We can add classes to classList using .add
+    <li> We can remove classes from classList using .remove
+    <li> We can toggle classes from classList using .toggle
+    <li> styling using DOM
+
