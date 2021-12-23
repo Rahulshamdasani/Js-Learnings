@@ -47,7 +47,7 @@ check script1 for this.
 <br/>
 <br/>
 
-## Remove Elements from a DOM
+### 2. Remove Elements from a DOM
 
 <p>
 To remove an element from a DOM, simply write a query selector to fetch that element and write elementName.remove()<br/>
@@ -56,15 +56,28 @@ Commands for both are shown in script.js
 <br/>
 </p>
 We can do many more operations
-<ul>
-    <li> getAttributes()
-    <li> setAttributes()
-    <li> removeAttributes()
-    <li> creating custom attributes : Condition for these attributes is, it should start with keyword data
-    <li>If custom attributes are more than 1 word then they are automatically stored as camelCase
-    <li> we can see classList
-    <li> We can add classes to classList using .add
-    <li> We can remove classes from classList using .remove
-    <li> We can toggle classes from classList using .toggle
-    <li> styling using DOM
+
+### 3.  getAttributes()
+This is used to get all the elements like title, id or any other custom attributes
+### 4.  setAttributes()
+This is used to manipulate value of currently present attributes or we can even create new attributes using this.
+### 5.  removeAttributes()
+This can be used to delete the attribute all together
+### 6.  creating custom attributes : Condition for these attributes is, it should start with keyword data
+If custom attributes are more than 1 word then they are automatically stored as camelCase
+### 7.  we can see classList
+This is used to see the classes that are associated to the element we fetched using querySelector<br/>
+there are several operations that can be performed on this list of classes
+### 8.  We can add classes to classList using .add
+This is used to add some class attribute to the classlist
+### 9.  We can remove classes from classList using .remove
+This can be used to remove some class attribute from the classlist
+### 10.  We can toggle classes from classList using .toggle
+This will toggle the classes, i.e. if it present the attribute will remove it, and vice-a-versa
+### 11.  styling using DOM
+We can give custom styling from DOM manipulation.<br/>
+If we want to give color or anything like that, this can be used. <br/>
+<code>variable.style.color = "red"</code><br/>
+If the attribute in normal css has a big name like <code>background-color</code> then we can write it as camel case <br/>
+<code>variable.style.backgroundColor = "red"</code><br/>
 
