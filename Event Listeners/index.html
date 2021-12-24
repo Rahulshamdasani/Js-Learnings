@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer> </script>
+    <style>
+        .grandParent {
+            text-align: center;
+            position: relative;
+            margin: 1em auto;
+            width: 25em;
+            height: 20em;
+        }
+
+        .Parent {
+            text-align: center;
+            position: absolute;
+            left: calc((100% - 20em) / 2);
+            top: calc((100% - 15em) / 2);
+            width: 20em;
+            height: 15em;
+        }
+
+        .child {
+            text-align: center;
+            position: absolute;
+            left: calc((100% - 15em) / 2);
+            top: calc((100% - 10em) / 2);
+            width: 15em;
+            height: 10em;
+        }
+
+        .borderBackgr_1 {
+        border: solid 1px black;
+        background: red;
+        }
+
+        .borderBackgr_2 {
+        border: solid 1px blueviolet;
+        background: blue;
+        }
+
+        .borderBackgr_3 {
+        border: solid 1px green;
+        background: green;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div id="grandParent" class="grandParent borderBackgr_1">
+        grandParent
+        <div id="Parent" class="Parent borderBackgr_2" >
+            Parent
+            <div id="child" class="child borderBackgr_3">
+                child
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
