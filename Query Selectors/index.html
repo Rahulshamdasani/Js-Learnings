@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        .grandParent{
+            background-color: aqua;
+        }
+        .parent{
+            background-color: red;
+        }
+        .child{
+            background-color: azure;
+        }
+    </style>
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="grandParent container" id="grandparentID" style="margin-top: 20px; padding: 20px;">
+        <div class="parent row" id="parentID" style="height: 200px; padding: 20px">
+            <div class="child col" id="childID" style="margin: 10px;">
+                <h1>Col 1</h1>
+            </div>
+            <div class="child col" id="childID">
+                <h1>Col 2</h1>
+            </div>
+        </div>
+
+        <div class="parent row" id="parentID" style="height: 200px; margin-top: 10px; padding: 20px">
+            <div class="child col" id="childID" style="margin: 10px;">
+                <h1>Col 1</h1>
+            </div>
+            <div class="child col" id="childID">
+                <h1>Col 2</h1>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
