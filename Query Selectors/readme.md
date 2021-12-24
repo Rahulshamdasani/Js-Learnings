@@ -1,7 +1,6 @@
 ## Query Selectors
 
 We can use css selectors inside JS to fetch the elements which can be used for DOM manipulation or any other manipulation
-
 <br/>
 <br/>
 
